@@ -1,2 +1,2 @@
 # Interpretador Chip8
- Repositório para aprendizado em c++
+ Repositório para aprendizado em c++(Em desenvolvimento)
