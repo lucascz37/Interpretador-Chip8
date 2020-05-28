@@ -1,1 +1,4 @@
 Debug/*
+Src/*.o
+Makefile.win
+Interpretador-Chip8.exe

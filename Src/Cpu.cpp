@@ -8,7 +8,7 @@ Cpu::Cpu(std::vector<unsigned int> hexInstuctions): instructions(hexInstuctions)
 
 void Cpu::readInstructions()
 {
-	for (int i = 0; i < std::size(instructions); i+=2) {
+	for (int i = 0; i < instructions.size(); i+=2) {
 		unsigned int codeByte1 = instructions[i] & 0x0f0; // 4 primeiros números do byte
 		unsigned int codeByte2 = instructions[i] & 0x0f; // 4 ultimos números do byte
 		switch (codeByte1)

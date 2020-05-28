@@ -5,7 +5,7 @@
 using namespace std;
 
 vector<unsigned int> readFile() {
-    ifstream rom("__", ifstream::binary); //Local do rom 
+    ifstream rom("C://Users//lucas//Downloads//Fishie.ch8", ifstream::binary); //Local do rom 
     rom.seekg(0, rom.end);
     int length = rom.tellg();
     length += 0x200;
@@ -26,5 +26,7 @@ vector<unsigned int> readFile() {
 int main()
 {
     Cpu chip8(readFile());
+    int x;
+	cin >> x;
     return 0;
 }
