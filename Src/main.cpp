@@ -25,8 +25,12 @@ vector<unsigned int> readFile() {
 
 int main()
 {
-    Cpu chip8(readFile());
-    int x;
-	cin >> x;
+	Cpu chip8(readFile());
+	while(true){
+		chip8.readInstructions();
+    	int x;
+		cin >> x;
+	}
+    
     return 0;
 }
