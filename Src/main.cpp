@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <windows.h>
 #include "Cpu.h"
 using namespace std;
 
@@ -26,10 +27,10 @@ vector<unsigned int> readFile() {
 int main()
 {
 	Cpu chip8(readFile());
+	system("cls");
 	while(true){
 		chip8.readInstructions();
-    	int x;
-		cin >> x;
+    	Sleep(17);
 	}
     
     return 0;
